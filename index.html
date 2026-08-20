@@ -11,7 +11,7 @@
   body { font-family: 'Inter', sans-serif; background: #0a0a0a; color: #f0ede8; line-height: 1.6; }
 
   .hero { min-height: 100vh; background: linear-gradient(135deg, #0a0a0a 0%, #1a1207 40%, #0d0d0d 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 60px 24px; position: relative; overflow: hidden; }
-  .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 30%, rgba(180,140,60,0.12) 0%, transparent 65%); }
+  .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 30%, rgba(180,140,60,0.12) 0%, transparent 65%); pointer-events: none; }
   .hero-tag { font-size: 11px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: #b8922e; margin-bottom: 28px; }
   .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(48px, 8vw, 96px); font-weight: 900; line-height: 1.05; color: #f5f0e8; margin-bottom: 20px; position: relative; }
   .hero h1 em { font-style: italic; color: #c9a84c; }
@@ -61,7 +61,7 @@
 <div style="background:#b8922e;color:#0a0a0a;text-align:center;padding:10px 24px;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;">A Revival Ministry Event</div>
 
 <div class="hero">
-  <p class="hero-tag">Revival Ministry · ECFC Los Angeles North · 3405 W Pico Blvd, Los Angeles, CA</p>
+  <p class="hero-tag">Revival Ministry · ECFC Los Angeles · 3405 W Pico Blvd, Los Angeles, CA</p>
   <h1>But By My<br><em>Spirit</em></h1>
   <p class="verse">"Not by might, nor by power, but by My Spirit, says the Lord of Hosts."<br>— Zechariah 4:6</p>
   <div class="event-details">
@@ -72,7 +72,7 @@
     <div class="divider"></div>
     <div class="detail-item">
       <div class="detail-label">Location</div>
-      <div class="detail-value">ECFC Los Angeles North</div>
+      <div class="detail-value">ECFC Los Angeles</div>
     </div>
     <div class="divider"></div>
     <div class="detail-item">
@@ -143,7 +143,7 @@
 </div>
 
 <footer>
-  <p>Fall Conference 2026 &nbsp;·&nbsp; ECFC Los Angeles North · 3405 W Pico Blvd, Los Angeles, CA 90019 · Revival Ministry</p>
+  <p>Fall Conference 2026 &nbsp;·&nbsp; ECFC Los Angeles · 3405 W Pico Blvd, Los Angeles, CA 90019 · Revival Ministry</p>
 </footer>
 
 <script>document.querySelector(".cta-btn").addEventListener("click",function(e){e.preventDefault();document.querySelector("#schedule").scrollIntoView({behavior:"smooth"});});</script>
